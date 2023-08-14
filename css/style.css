@@ -53,7 +53,7 @@ header {
      padding: 0;
 }
 
-.nav-list > li {
+.nav-list>li {
      margin: 0 1.5%;
 }
 
@@ -70,12 +70,12 @@ header {
 }
 
 .register {
-     display: inline-block;
-     margin-left: 22%;
+     display: block;
+     margin: 0 1% 0 auto;
 }
 
 .register button {
-     background-color: rgba(222,165,143,1);
+     background-color: rgba(222, 165, 143, 1);
      border: none;
      border-radius: 5px;
      padding: 10px 15px;
@@ -84,7 +84,7 @@ header {
      cursor: pointer;
 }
 
-.register > a + button {
+.register>a+button {
      background-color: rgba(143, 189, 211, 1);
 }
 
@@ -95,14 +95,16 @@ header {
 .front-page {
      background-image: url('../images/deer-bg.jpg');
      background-repeat: no-repeat;
-     background-size: 100% auto;
+     background-size: cover;
      width: 100%;
-     height: 900px; /*Relook at this and change*/
+     height: 900px;
+     /*Relook at this and change*/
 }
 
 .title {
-     position: absolute; /*Could do div and margin pushing*/
-     color: rgba(255,253,208,1);
+     position: absolute;
+     /*Could do div and margin pushing*/
+     color: rgba(255, 253, 208, 1);
      font-weight: 400;
      font-size: 40px;
      right: 7%;
@@ -113,7 +115,7 @@ header {
      display: block;
      position: absolute;
      color: rgba(0, 0, 0, 1);
-     background-color: rgba(255,255,255,1);
+     background-color: rgba(255, 255, 255, 1);
      border: none;
      border-radius: 25px;
      padding: 1% 2%;
@@ -134,11 +136,11 @@ header {
 *******************************************/
 
 #mission-statement {
-     background: linear-gradient(0deg, rgba(204,204,215,1) 0%, rgba(115,92,60,1) 100%);
+     background: linear-gradient(0deg, rgba(204, 204, 215, 1) 0%, rgba(115, 92, 60, 1) 100%);
      height: 800px;
 }
 
-.mission-block{
+.mission-block {
      width: 1000px;
      margin: 0 auto;
 }
@@ -151,17 +153,17 @@ header {
      font-size: 35px;
 }
 
-.mission-block > h1 {
+.mission-block>h1 {
      padding-top: 40px;
 }
 
-.mission-block > p {
+.mission-block>p {
      font-family: 'Hind', sans-serif;
      font-size: 25px;
      padding-bottom: 12.5%;
 }
 
-.mission-block > h3 {
+.mission-block>h3 {
      font-size: 30px;
 }
 
@@ -182,7 +184,8 @@ header {
      background-size: cover;
      font-family: 'Hind', sans-serif;
 }
-.circle > span {
+
+.circle>span {
      display: block;
      margin-top: 200px;
      font-family: 'Hind', sans-serif;
@@ -222,7 +225,8 @@ header {
      height: 555px;
 }
 
-#featured > h2 {
+#featured>h2 {
+     margin-top: 1.5%;
      font-size: 35px;
      font-weight: 400;
      border-bottom: none;
@@ -236,7 +240,7 @@ header {
      align-content: center;
 }
 
-.aot > img {
+.aot>img {
      border-radius: 5px;
      width: 600px;
      height: auto;
@@ -247,18 +251,19 @@ header {
      flex-direction: column;
      flex-wrap: wrap;
      text-align: left;
-     justify-content: center; /*Up for debates*/
+     justify-content: center;
+     /*Up for debates*/
      margin: 0;
      width: 50%;
      padding: 0 30px;
 }
 
-.aot-info > h3 {
+.aot-info>h3 {
      font-size: 22px;
      margin: 0;
 }
 
-.aot-info > p {
+.aot-info>p {
      font-family: 'Hind', sans-serif;
      font-size: 18px;
      margin-top: 5%;
@@ -268,7 +273,7 @@ header {
                How to Help
 *******************************************/
 .cheetah {
-     background-image: url(../images/cheetah-3.jpg);
+     background-image: url(../images/cheetah-2.jpg);
      background-repeat: no-repeat;
      background-size: cover;
      background-position: 0;
@@ -276,18 +281,57 @@ header {
      height: 250px;
 }
 
+.cheetah>div {
+     position: relative;
+     text-align: center;
+     width: 300px;
+     margin-left: auto;
+     top: 35%;
+     right: 15%;
+}
+
+.cheetah h2 {
+     color: #FFFDD0;
+     border-bottom: 1px solid #FFFDD0;
+     width: fit-content;
+     margin: 0 auto 5% auto;
+     font-weight: 400;
+     font-size: 30px;
+}
+
+.cheetah a {
+     margin: 0 1%;
+}
+
+.cheetah button {
+     background-color: rgba(255, 255, 255, 0.9);
+     color: rgb(50, 176, 234);
+     border: none;
+     border-radius: 5px;
+     padding: 12px 27px;
+     font-weight: 600;
+     font-size: 15px;
+     cursor: pointer;
+}
+
+.cheetah a+a>button {
+     background-color: rgb(50, 176, 234);
+     color: rgba(255, 255, 255, 1);
+}
+
 /******************************************
                Footer
 *******************************************/
 footer {
+     margin-top: 5%;
      height: 200px;
 }
 
-footer > p {
+footer>p {
      text-align: center;
 }
 
-footer > div {
+footer>div {
      width: 1000px;
      margin: 0 auto;
      border-bottom: 1px solid black
@@ -297,7 +341,7 @@ footer > div {
      display: flex;
      justify-content: space-between;
      padding: 0;
-     align-items: center;     
+     align-items: center;
 }
 
 footer img {
@@ -311,30 +355,32 @@ footer img {
 /******************************************
                Articles.HTML
 *******************************************/
+#articles-html {
+     background-color: white;
+}
+
 #articles-page {
-     width: 1000px;
+     width: 1200px;
      margin: 0 auto;
 }
 
-#articles-page > h1 {
+#articles-page>h1 {
      width: fit-content;
      margin: 3% auto;
      border-bottom: 1px solid black;
 }
 
-.articles {
-     text-align: center;
-     border-bottom: 1px dotted black;
-     margin: 2% auto;
-}
-.half {
-     display: inline-block;
-     width: 45%;
-     margin-left: 0;
+.main-article {
+     display: flex;
+     flex-wrap: wrap;
+     background-color: rgba(240, 240, 240, 0.99);
+     margin-bottom: 3%;
 }
 
-.category {
-     display: block;
+.main-article .article-images {
+     text-align: left;
+     width: 600px;
+     height: auto;
 }
 
 .article-images {
@@ -342,16 +388,154 @@ footer img {
      height: auto;
 }
 
-.move-left {
+.main-article>div+div {
      text-align: left;
+     width: 600px;
 }
 
+.main-article>div+div>h2,
+.main-article>div+div>span,
+.main-article>div+div>p,
+.main-article>div+div>a {
+     display: block;
+     width: 515px;
+     margin: 3% auto;
+}
+
+.main-article>div+div>p {
+     margin-top: 5%;
+}
+
+.sub-articles>a {
+     background-color: rgba(240, 240, 240, 0.99);
+     display: inline-block;
+     width: 590px;
+     text-decoration: none;
+     color: black;
+     padding-bottom: 10px;
+     margin-bottom: 3%;
+}
+
+.sub-articles .spacer {
+     margin-left: 1.2%;
+}
+
+.sub-articles img {
+     width: 590px;
+     height: 330px;
+}
+
+.sub-articles span {
+     font-family: 'Hind', 'Montserrat', sans-serif;
+     font-weight: 700;
+     border-left: 2.5px solid black;
+     padding-left: 5px;
+}
+
+.sub-article-info {
+     padding: 0 15px 10px 15px;
+}
 
 /******************************************
                Projects
 *******************************************/
-.grassland-projects {
-     background-image: url(../images/grasslands-bg.jpeg);
+#projects-html {
+     text-align: center;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 700;
+     font-size: 20px;
+     background-color: rgba(51,51,56,0.99);
+}
+
+#projects-html h1 {
+     margin: 0;
+     margin-bottom: 100px;
+}
+
+#projects-html section {
+     height: 925px;
+}
+
+#grassland,
+#forest,
+#aquatic,
+#desert,
+#tundra {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-image: url(../images/grassland-bg.jpg);
      background-repeat: no-repeat;
-     background-position: 30%;
+     background-size: cover;
+     background-position: 10% 58%;
+     height: 200px;
+}
+
+#forest {
+     background-image: url(../images/forest-bg.jpg);
+     background-position: 10% 35%;
+}
+
+#aquatic {
+     background-image: url(../images/aquatic-bg.jpg);
+     background-position: 10% 3.5%;
+}
+
+#desert {
+     background-image: url(../images/desert-bg.jpg);
+     background-position: 10% 66.5%;
+}
+
+#tundra {
+     background-image: url(../images/tundra-bg.jpg);
+     background-position: 10% 48%;
+}
+
+.square {
+     display: inline-block;
+     width: 200px;
+     height: 200px;
+     margin: 5%;
+     background: rgba(248, 243, 233, 1) none no-repeat center center;
+     border-radius: 5px;
+     box-shadow: 0 0 5px rgba(240,240,240,0.99);
+     background-size: cover;
+     font-family: 'Hind', sans-serif;
+     font-size: 18px;
+}
+
+.square span {
+     display: block;
+     color: rgba(240,240,240,1);
+     font-weight: 700;
+     font-family: 'Hind', 'Montserrat', sans-serif;
+     margin-top: 110%;
+}
+
+.end-1 {
+     background-image: url(../images/projects-1.jpg);
+}
+
+.end-2 {
+     background-image: url(../images/projects-2.jpg);
+     background-position: 80%;
+}
+
+.end-3 {
+     background-image: url(../images/projects-3.jpg);
+}
+
+.end-4 {
+     background-image: url(../images/projects-4.jpg);
+     background-position: 10% 10%;
+}
+
+.end-5 {
+     background-image: url(../images/projects-5.jpg);
+     background-position: 80%;
+}
+
+.end-6 {
+     background-image: url(../images/projects-6.jpeg);
+     background-position: 0 35%;
 }
