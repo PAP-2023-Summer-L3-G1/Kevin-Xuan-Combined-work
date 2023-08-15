@@ -539,3 +539,145 @@ footer img {
      background-image: url(../images/projects-6.jpeg);
      background-position: 0 35%;
 }
+/****************
+    contact
+****************/
+.contact-section * {
+     box-sizing: content-box;
+   }
+ 
+   #mainContact {
+     background-image: url('../images/buffalow.jpeg');
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+ 
+   #body2 {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: #f4f4f4;
+     background-repeat: no-repeat;
+   }
+   
+   .container2 {
+     max-width: 620px;
+     margin: 0 auto;
+     padding: 20px;
+     background-color: #ffffff;
+     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+     border-radius: 5px;
+   }
+   
+   #contact {
+     text-align: center;
+   }
+   
+   .contact-section form {
+     display: grid;
+     gap: 10px;
+   }
+ 
+   .contact-section label {
+     font-weight: bold;
+   }
+   
+   input[type="text"],
+   input[type="date"],
+   input[type="email"],
+   input[type="tel"],
+   .contact-section textarea {
+     width: 96%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+   }
+   
+   .contact-section textarea {
+     resize: vertical;
+   }
+   
+   .contact-section button {
+     background-color: #007bff;
+     color: #fff;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 3px;
+     cursor: pointer;
+   }
+   
+   .contact-section button:hover {
+     background-color: #0056b3;
+   }
+   
+     #confirmation-message {
+        display: none;
+        text-align: center;
+        font-family:'Hind', sans-serif;
+        font-size: 70px;
+     }
+
+     
+.aboutaDiv {
+     position: relative;
+     text-align: center;
+ }
+ .aboutaDiv h1, h2{
+     font-family: 'Hind', sans-serif;
+ }
+ #about-sizing {
+     font-size: 50px;
+     position: relative;
+     top: 50px;
+ }
+ 
+ #firstbox{
+     position: relative;
+     
+ }
+ #baby-deer {
+     width: 860px;
+     padding-right: 50px;
+ 
+ }
+ 
+ .mynameisboxxy {
+     width: 800px;
+     margin-right: 40px;
+     position: relative;
+     top: 130px;
+ }
+ 
+ #cute-crossing {
+     width: 850px;
+ }
+ 
+ #title2 {
+     font-size: 40px;
+     font-family: 'Hind', sans-serif;
+     position: relative;
+     left: 400px;
+     top: 100px;
+ }
+ 
+ #title3 {
+     font-size: 40px;
+     font-family: 'Hind', sans-serif;
+     position: relative;
+     left: 1250px;
+     top: 150px;
+ }
+ 
+ #firstbox {
+     display: flex;
+     position: relative;
+     left: 120px;
+ }
+ 
+ #secondBox {
+     display: flex;
+     position: relative;
+     left: 120px;
+     padding-bottom: 40px;
+ }
+ 

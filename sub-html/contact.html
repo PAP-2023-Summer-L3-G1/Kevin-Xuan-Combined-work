@@ -32,12 +32,49 @@
 			</nav>
 		</header>
 
-		<main>
-			<div>
-				
+		<main id="mainContact">
+			<body id="body2">
+			<div class="contact-section container2">
+				<h1 id="contact">Contact Us</h1>
+				<form action="#" id="formtype">
+				  <label for="name">Your Name:</label>
+				  <input type="text" id="name" name="name" required>
+			
+				  <label for="birthday">Your Birthday:</label>
+				  <input type="date" id="birthday" name="birthday" required>
+			
+				  <label for="email">Your Email:</label>
+				  <input type="email" id="email" name="email" required>
+			
+				  <label for="phone">Your Phone Number:</label>
+				  <input type="tel" id="phone" name="phone" required>
+			
+				  <label for="message">Your Message:</label>
+				  <textarea id="message" name="message" rows="6" required></textarea>
+			
+				  <button type="submit">Submit</button>
+				</form>
+				<p id="confirmation-message">Message sent!</p>
 			</div>
+			</body>
 		</main>
-		
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const contactSection = document.querySelector(".contact-section form");
+				const confirmationMessage = document.getElementById("confirmation-message");
+				const submitButton = document.querySelector("form button");
+	
+				submitButton.addEventListener("click", function (event) {
+					event.preventDefault(); // Prevent form submission
+					// Hide the contact form
+					contactSection.style.display = "none";
+					// Show the confirmation message
+					confirmationMessage.style.display = "block";
+				});
+			});
+		</script>
+
 		<footer>
 			<div>
 				<ul class="footer-nav nav-anch">
